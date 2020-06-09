@@ -26,17 +26,17 @@ public class Update {
 			pstmt.setString(1, "5");
 			
 			int cnt = pstmt.executeUpdate();
-			System.out.println("º¯°æµÈ Çà:"+cnt);
+			System.out.println("ë³€ê²½ëœ ì…€"+cnt);
 			
 			
 		}
 		catch(Exception e) {
-			System.out.println("¿À·ù:"+e.getMessage());
+			System.out.println("ì˜¤ë¥˜:"+e.getMessage());
 		}finally {
 			try {
 			pstmt.close();
 			con.close();
-			System.out.println("¾÷µ¥ÀÌÆ® ¿Ï·á");
+			System.out.println("ì—…ë°ì´íŠ¸ ì™„ë£Œ");
 			}
 		catch(Exception e2) {}
 		}

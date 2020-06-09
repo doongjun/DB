@@ -22,10 +22,10 @@ public class Delete {
 			con = DriverManager.getConnection(url,user,pw);
 			pstmt = con.prepareStatement(sql);
 			
-			pstmt.setString(1, "11");
+			pstmt.setString(1, "8");
 			
 			int cnt = pstmt.executeUpdate();
-			System.out.println("º¯°æµÈ Çà:"+cnt);
+			System.out.println("ì‚­ì œëœ ì…€"+cnt);
 			
 			
 		}
@@ -35,7 +35,7 @@ public class Delete {
 			try {
 			pstmt.close();
 			con.close();
-			System.out.println("»èÁ¦ ¿Ï·á");
+			System.out.println("ì‚­ì œ ì™„ë£Œ");
 			}
 		catch(Exception e2) {}
 		}

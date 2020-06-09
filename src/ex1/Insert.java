@@ -21,12 +21,12 @@ public class Insert {
 			
 			pstmt.setString(1,"11");
 			pstmt.setString(2, "45");
-			pstmt.setString(3, "À¯Àç¼®");
+			pstmt.setString(3, "ì •ì¤€í•˜");
 			
 			int cnt = pstmt.executeUpdate(); //excuteUpdate(); create insert update delete
 											 //excuteQuery(); select
 			
-			System.out.println("Ãß°¡µÈ Çà:"+cnt);
+			System.out.println("ì‚½ì…ëœ í–‰"+cnt);
 		}
 		catch(Exception e) {
 			System.out.println(e.getMessage());
@@ -34,6 +34,7 @@ public class Insert {
 			try {
 				pstmt.close();
 				con.close();
+				System.out.println("ì‚½ì… ì™„ë£Œ");
 			}catch(Exception e2) {}
 			
 		}
