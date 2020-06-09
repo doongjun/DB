@@ -31,7 +31,7 @@ public class Update {
 			
 		}
 		catch(Exception e) {
-			System.out.println(e.getMessage());
+			System.out.println("¿À·ù:"+e.getMessage());
 		}finally {
 			try {
 			pstmt.close();
