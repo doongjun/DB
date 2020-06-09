@@ -20,11 +20,13 @@ public class Insert {
 			pstmt = con.prepareStatement(sql);
 			
 			pstmt.setString(1,"11");
-			pstmt.setString(2, "40");
-			pstmt.setString(3, "하하");
+			pstmt.setString(2, "45");
+			pstmt.setString(3, "유재석");
 			
 			int cnt = pstmt.executeUpdate(); //excuteUpdate(); create insert update delete
 											 //excuteQuery(); select
+			
+			System.out.println("추가된 행:"+cnt);
 		}
 		catch(Exception e) {
 			System.out.println(e.getMessage());
